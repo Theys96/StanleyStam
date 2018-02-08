@@ -17,7 +17,7 @@ if (file_exists('php/code/' . $page . '.php')) {
 	<head>
 		<!--Info-->
 		<title>Stanleystam</title>
-		<link rel="shortcut icon" type="image/png" href="/logo.png"/>
+		<link rel="shortcut icon" type="image/png" href="/apple-touch-icon.png"/>
 		<link rel="manifest" type="application/json" href="/manifest.json">
 		<meta charset="UTF-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,14 +26,14 @@ if (file_exists('php/code/' . $page . '.php')) {
 		<meta name="theme-color" content="#222A0A" />
 
 		<!--Resources-->
-		<link rel="stylesheet" type="text/css" href="/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="/style.css">
+		<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<script src="jquery.js"></script>
 		<?php
 		if (isset($_COOKIE['style'])) {
-			echo '<link rel="stylesheet" type="text/css" href="/style_'.$_COOKIE['style'].'.css">';
+			echo '<link rel="stylesheet" type="text/css" href="style/'.$_COOKIE['style'].'.css">';
 		} else {
-			echo '<link rel="stylesheet" type="text/css" href="/style_dark.css">';
+			echo '<link rel="stylesheet" type="text/css" href="style/dark.css">';
 		}
 		echo "\n";
 		?>
