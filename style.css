@@ -1,0 +1,47 @@
+body {
+	# background-color: #222A0A;
+	background-color: #2d390f;
+}
+
+h1 {
+	color: #ff7f00;
+}
+
+.card {
+	box-shadow: 0 0 25px rgba(255,255,255,0.1);
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.description-text {
+	font-size: 1.1em;
+	color: #777;
+	text-align: center;
+}
+
+.todo-text {
+	color: #777;
+	text-align: justify;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.table-row {
+	background-color: rgba(0,0,0,0.15);
+	border-radius: 10px;
+}
+
+.small-logo {
+	background-image: url('/pen2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+}

@@ -1,0 +1,19 @@
+{
+   "name":"Stanleystam",
+   "short_name":"Stanley",
+   "start_url":"file:///Users/thijs/Desktop/Stanley2.0/index.html",
+   "scope":"file:///Users/thijs/Desktop/Stanley2.0/",
+   "display":"standalone",
+   "orientation":"portrait-primary",
+   "background_color":"#222A0A",
+   "theme_color":"#222A0A",
+   "description":"Homepage voor de Stanleystam Groningen.",
+   "lang":"nl-NL",
+   "icons":[
+      {
+         "src":"logo.png",
+         "sizes":"32x32 48x48 64x64",
+         "type":"image/png"
+      }
+   ]
+}

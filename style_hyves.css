@@ -1,0 +1,39 @@
+
+body {
+	font-family: sans-serif;
+	font-variant: small-caps;
+	letter-spacing: 3px;
+	background-image: url("bg.gif");
+	text-shadow: 0px 0px 10px black;
+}
+
+.card {
+	background-color: rgba(80, 150, 200, 0.5);
+	color: white;
+	border-color: transparent;
+	border-radius: 30px;
+}
+
+.card .card-header, .card .card-footer {
+	background-color: #FF7F00;
+	border-radius: 30px;
+}
+
+.btn-stanley {
+	background-color: #FF7F00;
+	color: white;
+	border-color: transparent;
+}
+
+.btn-stanley:hover, .btn-stanley:active {
+	background-color: rgba(0, 100, 200, 0.6);
+	color: white;
+}
+
+hr {
+	background-color: rgba(0, 100, 200, 0.6);
+}
+
+.description-text {
+	color: white;
+}
