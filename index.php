@@ -26,14 +26,14 @@ if (file_exists('php/code/' . $page . '.php')) {
 		<meta name="theme-color" content="#222A0A" />
 
 		<!--Resources-->
-		<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<script src="jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="/style/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="/style/style.css">
+		<script src="/jquery.js"></script>
 		<?php
 		if (isset($_COOKIE['style'])) {
-			echo '<link rel="stylesheet" type="text/css" href="style/'.$_COOKIE['style'].'.css">';
+			echo '<link rel="stylesheet" type="text/css" href="/style/'.$_COOKIE['style'].'.css">';
 		} else {
-			echo '<link rel="stylesheet" type="text/css" href="style/dark.css">';
+			echo '<link rel="stylesheet" type="text/css" href="/style/dark.css">';
 		}
 		echo "\n";
 		?>
