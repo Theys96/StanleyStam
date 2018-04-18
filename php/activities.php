@@ -4,13 +4,16 @@ function printHeader($title, $type, $type_color) {
 	echo '
 		<div class="card-header">
 			<div class="row">
-				<div class="col-md-9 text-center">
+				<div class="col-md-8 text-center">
 					<h4>' . $title . '</h4>
 				</div>
 				<div class="col-md-3">
 					<div class="w-100 h-100 align-middle badge badge-' . $type_color . '">
 						<h6 class="pt-1">' . $type . '</h6>
 					</div>
+				</div>
+				<div class="col-1">
+					E
 				</div>
 			</div>
 		</div>';
