@@ -62,6 +62,5 @@ if (file_exists('php/code/' . $page . '.php')) {
 	  			</div>
 			</div>
 		</div>
-		<div id="footer">&copy; Thijs Havinga, 2018</div>
 	</body>
 </html>
