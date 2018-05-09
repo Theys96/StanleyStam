@@ -9,7 +9,7 @@
     	<div class='col-4'><b>E-mail</b></div>
     	<div class='col-8'><a href='mailto:bestuur@stanleystam.nl'>bestuur@stanleystam.nl</a></div>
     	<div class='col-4'><b>Adres</b></div>
-    	<div class='col-8'>Het Stamhok<br />Clubgebouw "De Til"<br />Concourslaan 2<br />9727 KD  Groningen
+    	<div class='col-8'>Het Stamhok<br />Clubgebouw "De Til"<br />Concourslaan 2<br />9727 KD  Groningen</div>
     </div>
   </div>
 </div>	
