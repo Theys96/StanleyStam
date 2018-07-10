@@ -46,7 +46,7 @@
 		<?php
 		echo pageLink('profiel', 'Profiel', $page);
 		echo pageLink('actiepunten', 'Actiepunten', $page);
-		echo '<a target="_blank" href="<?php echo $googleDrive; ?>" class="btn btn-stanley btn-outline-primary"><img style="display: inline-block; height: 1.5em;" src="/GoogleDrive.png">  Google Drive</a>';
+		echo '<a target="_blank" href="' . $googleDrive . '" class="btn btn-stanley btn-outline-primary"><img style="display: inline-block; height: 1.5em;" src="/GoogleDrive.png">  Google Drive</a>';
 		echo pageLink('barkaart', 'Barkaart', $page);
 		?>
 	</div>
