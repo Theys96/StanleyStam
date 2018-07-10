@@ -2,7 +2,7 @@
 session_start();
 
 /* Functions */
-function menu($page, $Auth) {
+function menu($page, $Auth, $googleDrive) {
 	if ($Auth->isAuth()) {
 		require_once('php/menu_in.php');
 	} else {

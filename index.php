@@ -49,7 +49,7 @@ if (file_exists('php/code/' . $page . '.php')) {
 
 					<div class="card my-3">
 						<?php
-						menu($page, $Auth);
+						menu($page, $Auth, $googleDrive);
 						?>
 					</div>
 
