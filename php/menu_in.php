@@ -34,6 +34,11 @@
 	</div>
 	<div class="btn-group-vertical w-100 my-2">
 		<?php
+		echo pageLink('front', 'Stanleystam', $page);
+		?>
+	</div>
+	<div class="btn-group-vertical w-100 my-2">
+		<?php
 		echo pageLink('agenda', 'Agenda', $page);
 		echo pageLink('opkomsten', 'Opkomsten', $page);
 		echo pageLink('kampen', 'Kampen', $page);

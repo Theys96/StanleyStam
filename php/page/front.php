@@ -3,6 +3,19 @@
   <div class="card-body p-3">
     <p class="card-text">Welkom op de homepage van de Stanleystam, de stam (18+ groep) van <a target="_blank" href="//www.zwerversgroningen.nl">Scoutinggroep "De Zwervers" Groningen</a>.
   </div>
+  <?php
+  if ($Auth->isAuth()) {
+    echo "<div class='card-body p-3'>\n";
+    $leden = $con->query("SELECT leden.voornaam AS naam FROM leden WHERE leden.tier > 0 ORDER BY voornaam ASC");
+    echo "<p class='card-text'>Op dit moment bestaat de stam uit " . $leden->num_rows . " leden:</p>\n";
+    echo "<div class='row'>\n";
+    while ($lid = $leden->fetch_assoc()) {
+      echo "<div class='col-3'>".$lid['naam']."</div>";
+    }
+    echo "</div>\n";
+    echo "</div>\n";
+  }
+  ?>
   <div class="card-body p-3">
   	<h4>Contact</h4>
     <div class='row'>
@@ -12,4 +25,4 @@
     	<div class='col-8'>Het Stamhok<br />Clubgebouw "De Til"<br />Concourslaan 2<br />9727 KD  Groningen</div>
     </div>
   </div>
-</div>	
+</div>
