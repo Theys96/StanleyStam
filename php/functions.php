@@ -14,14 +14,14 @@ function pageLink($link, $label, $page) {
 	return '<a href="/'.$link.'" class="btn btn-stanley btn-outline-primary'.($link == $page ? ' active' : '').'">'.$label.'</a>';
 }
 
-function printListHighlighted($list, $name) {
+function printListHighlighted($list, $userID) {
     $found = 0;
-    foreach($list as $item) {
-        if ($item == $name) {
-            echo "<span class='text-success text-bold'>" . $item . "</span> ";
+    foreach($list as $id => $name) {
+        if ($id == $userID) {
+            echo "<span class='text-success text-bold'>" . $name . "</span> ";
             $found = 1;
         } else {
-            echo $item . " ";
+            echo $name . " ";
         }
     }
     return $found;
