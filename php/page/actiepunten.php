@@ -10,7 +10,7 @@
 			echo '<div class="row table-row my-1 p-2">';
 			echo '<div class="col-md-3 text-bold">' . $data['name'] . '</div>';
 			echo '<div class="col-md-3 text-justify">';
-			printListHighlighted($data['organisators'], $_SESSION['user']);
+			printListHighlightedName($data['organisators'], $_SESSION['user']);
 			echo '</div>';
 			echo '<div class="col-md-6 todo-text"><b>' . formatData($data['status_date'], $data['status_date']) . '</b> - ' . $data['status'] . '</div>';
 			echo '</div>';
@@ -31,7 +31,7 @@
 			echo '<div class="row table-row my-1 p-2">';
 			echo '<div class="col-md-3 text-bold">' . $data['name'] . '</div>';
 			echo '<div class="col-md-3 text-justify">';
-			printListHighlighted($data['organisators'], $_SESSION['user']);
+			printListHighlightedName($data['organisators'], $_SESSION['user']);
 			echo '</div>';
 			echo '<div class="col-md-6 todo-text"><b>' . formatData($data['status_date'], $data['status_date']) . '</b> - ' . $data['status'] . '</div>';
 			echo '</div>';
@@ -39,4 +39,3 @@
 		?>
 	</div>
 </div>
-

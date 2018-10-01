@@ -46,7 +46,7 @@ function printActivity(Activity $activity) {
 			if ($act['p']) {
 				echo '<div class="col-5 text-bold">Aanwezig ('.count($act['precencies']).')</div>' . "\n";
 				echo '<div class="col-7">';
-				$present = printListHighlighted($act['precencies'], $_SESSION['userID']);
+				$present = printListHighlightedId($act['precencies'], intval($_SESSION['userID']) );
 				echo '</div>';
 			}
 

@@ -14,7 +14,20 @@ function pageLink($link, $label, $page) {
 	return '<a href="/'.$link.'" class="btn btn-stanley btn-outline-primary'.($link == $page ? ' active' : '').'">'.$label.'</a>';
 }
 
-function printListHighlighted($list, $userID) {
+function printListHighlightedName($list, $user) {
+    $found = 0;
+    foreach($list as $name) {
+        if ($name == $user) {
+            echo "<span class='text-success text-bold'>" . $name . "</span> ";
+            $found = 1;
+        } else {
+            echo $name . " ";
+        }
+    }
+    return $found;
+}
+
+function printListHighlightedId($list, $userID) {
     $found = 0;
     foreach($list as $id => $name) {
         if ($id == $userID) {
