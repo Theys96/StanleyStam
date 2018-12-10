@@ -22,9 +22,9 @@ function toggleEdit(name) {
 			<div class="col-sm-6 text-bold">Naam</div>
 			<div class="col-sm-6"><?php echo $lid['voornaam'] . " " . $lid['achternaam']; ?></div>
 			
+			
 			<div class="col-sm-6 text-bold">Schermnaam</div>
-			<div class="col-sm-5 schermnaam"><?php echo $lid['schermnaam']; ?></div>
-			<div class="col-sm-1 schermnaam"><a class='icon' href='#' onClick='toggleEdit("schermnaam")'>&#x270E;</a></div>
+			<div class="col-sm-6 schermnaam"><?php echo $lid['schermnaam']; ?> <a class='icon' style='float: right' href='#' onClick='toggleEdit("schermnaam")'>&#x270E;</a></div>
 			<div class="input-group col-sm-6 edit-schermnaam" style="display: none;">
 			  <input type="text" class="form-control" value="<?php echo $lid['schermnaam']; ?>" name="schermnaam" />
 			  <div class="input-group-append">
@@ -33,8 +33,7 @@ function toggleEdit(name) {
 			</div>
 			
 			<div class="col-sm-6 text-bold">E-mailadres</div>
-			<div class="col-sm-5 mail"><?php echo $lid['mail']; ?></div>
-			<div class="col-sm-1 mail"><a class='icon' href='#' onClick='toggleEdit("mail")'>&#x270E;</a></div>
+			<div class="col-sm-6 mail"><?php echo $lid['mail']; ?> <a class='icon' href='#' style='float: right' onClick='toggleEdit("mail")'>&#x270E;</a></div>
 			<div class="input-group col-sm-6 edit-mail" style="display: none;">
 			  <input type="text" class="form-control" value="<?php echo $lid['mail']; ?>" name="mail" />
 			  <div class="input-group-append">
