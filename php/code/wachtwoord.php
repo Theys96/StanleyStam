@@ -63,7 +63,7 @@ $headers[] = 'From: Thijs <thijs@stanleystam.nl>';
 		//echo implode("\r\n", "<br />");
 	}
 	$message = "Er is een e-mail verstuurd naar het opgegeven e-mail adres, als deze bij een stamlid hoort.";
-	$warning = "Let op: De verzonden e-mail is waarschijnlijk in je spambox terecht gekomen."
+	$warning = "Let op: De verzonden e-mail is waarschijnlijk in je spambox terecht gekomen.";
 }
 
 if (isset($posthash)) {
