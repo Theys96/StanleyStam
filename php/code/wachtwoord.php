@@ -32,7 +32,7 @@ $message = "
 </head>
 <body>
   <p>Hoi %s,</p>
-  <p>Iemand (hopelijk jijzelf) heeft aangegeven dat je je wachtwoord op <a href='https://stanleystam.nl'>stanleystam.nl</a>
+  <p>Iemand (hopelijk jijzelf) heeft aangegeven dat je je wachtwoord op <a href='http://stanleystam.nl'>stanleystam.nl</a>
   bent vergeten. Om een nieuw wachtwoord in te stellen, ga dan naar de volgende link:<br />
   <a href='%s'>%s</a></p>
   <p>Groetjes,</p>
@@ -54,7 +54,7 @@ $headers[] = 'From: Thijs <thijs@stanleystam.nl>';
 		
 		$headers[] = sprintf("To: %s <%s>", $user['voornaam'], $user['mail']);
 		$to = $user['mail'];
-		$url = "stanleystam.nl/wachtwoord/" . $hash;
+		$url = $baseUrl . "/wachtwoord/" . $hash;
 		$message = sprintf($message, $user['voornaam'], "https://".$url, $url);
 		mail($to, $subject, $message, implode("\r\n", $headers));
 		//echo $to . "<br />";
