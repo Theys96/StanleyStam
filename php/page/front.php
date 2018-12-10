@@ -6,11 +6,11 @@
   <?php
   if ($Auth->isAuth()) {
     echo "<div class='card-body p-3'>\n";
-    $leden = $con->query("SELECT leden.voornaam AS naam FROM leden WHERE leden.tier > 0 ORDER BY voornaam ASC");
+    $leden = $con->query("SELECT leden.schermnaam AS naam FROM leden WHERE leden.tier > 0 ORDER BY schermnaam ASC");
     echo "<p class='card-text'>Op dit moment bestaat de stam uit " . $leden->num_rows . " leden:</p>\n";
     echo "<div class='row'>\n";
     while ($lid = $leden->fetch_assoc()) {
-      echo "<div class='col-3'>".$lid['naam']."</div>";
+      echo "<div class='col-3'>".$lid['schermnaam']."</div>";
     }
     echo "</div>\n";
     echo "</div>\n";
