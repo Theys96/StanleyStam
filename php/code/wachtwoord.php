@@ -43,7 +43,7 @@ $message = "
 $headers = array();
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=utf-8';
-$headers[] = 'From: Thijs <thijs@stanleystam.nl>';
+$headers[] = 'From: '.$admin_mail;
 
 	$query = $con->query("SELECT * FROM leden WHERE LOWER(mail)=LOWER('".$con->real_escape_string($_POST['mail'])."')");
 	if ($query->num_rows > 0) {
