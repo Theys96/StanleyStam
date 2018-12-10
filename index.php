@@ -23,7 +23,7 @@ if (file_exists('php/code/' . $page . '.php')) {
 		<title>Stanleystam</title>
 		<link rel="shortcut icon" type="image/png" href="/apple-touch-icon.png"/>
 		<link rel="manifest" type="application/json" href="/manifest.json">
-		<meta charset="UTF-8">
+		<meta charset="ISO-8859-1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="#222A0A">

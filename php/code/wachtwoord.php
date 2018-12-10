@@ -45,7 +45,7 @@ $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=utf-8';
 $headers[] = 'From: Thijs <thijs@stanleystam.nl>';
 
-	$query = $con->query("SELECT * FROM leden WHERE mail='".$con->real_escape_string($_POST['mail'])."'");
+	$query = $con->query("SELECT * FROM leden WHERE LOWER(mail)=LOWER('".$con->real_escape_string($_POST['mail'])."')");
 	if ($query->num_rows > 0) {
 		$user = $query->fetch_assoc();
 		$hash = hash("sha1",$user['id'] . time());
