@@ -5,18 +5,42 @@ if (isset($message)) {
 	echo "<<div class='alert alert-warning'>" . $message . "</div>\n";
 }
 ?>
+<script>
+function toggleEdit(name) {
+	$('.' + name).hide();
+	$('.edit-' + name).show();
+}
+</script>
 <div class="card my-3">
 	<div class="card-header">
 		<h4 class="card-title text-center">Profiel</h4>
 	</div>
 	<div class="card-block">
+	  <form method='post'>
 		<div class="row">
 
 			<div class="col-sm-6 text-bold">Naam</div>
 			<div class="col-sm-6"><?php echo $lid['voornaam'] . " " . $lid['achternaam']; ?></div>
-
+			
+			<div class="col-sm-6 text-bold">Schermnaam</div>
+			<div class="col-sm-5 schermnaam"><?php echo $lid['schermnaam']; ?></div>
+			<div class="col-sm-1 schermnaam"><a class='icon' href='#' onClick='toggleEdit("schermnaam")'>&#x270E;</a></div>
+			<div class="input-group col-sm-6 edit-schermnaam" style="display: none;">
+			  <input type="text" class="form-control" value="<?php echo $lid['schermnaam']; ?>" name="schermnaam" />
+			  <div class="input-group-append">
+			    <input class="btn btn-stanley btn-outline-primary" type="submit" value="Bijwerken" />
+			  </div>
+			</div>
+			
 			<div class="col-sm-6 text-bold">E-mailadres</div>
-			<div class="col-sm-6"><?php echo $lid['mail']; ?></div>
+			<div class="col-sm-5 mail"><?php echo $lid['mail']; ?></div>
+			<div class="col-sm-1 mail"><a class='icon' href='#' onClick='toggleEdit("mail")'>&#x270E;</a></div>
+			<div class="input-group col-sm-6 edit-mail" style="display: none;">
+			  <input type="text" class="form-control" value="<?php echo $lid['mail']; ?>" name="mail" />
+			  <div class="input-group-append">
+			    <input class="btn btn-stanley btn-outline-primary" type="submit" value="Bijwerken" />
+			  </div>
+			</div>
 
 			<div class="col-sm-6 text-bold">Scouting NL lidnummer</div>
 			<div class="col-sm-6"><?php echo $lid['scoutnummer']; ?></div>
@@ -28,6 +52,7 @@ if (isset($message)) {
 			<div class="col-sm-6"><?php echo $lid['geboortedag']; ?></div>
 
 		</div>
+	  </form>
 	</div>
 	<div class="card-footer">
 		<div class="row">

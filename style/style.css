@@ -45,3 +45,11 @@ h1 {
 	background-repeat: no-repeat;
 	background-position: right;
 }
+
+a.icon {
+	color: white;
+}
+
+a.icon:hover {
+	text-decoration: none;
+}

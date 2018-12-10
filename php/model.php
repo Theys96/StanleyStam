@@ -82,6 +82,14 @@ Class User {
 	function updatePassword($password) {
 		$this->db->query("UPDATE leden SET wachtwoord='".md5($password)."' WHERE id=" . $this->data['id']);
 	}
+	
+	function updateSchermnaam($naam) {
+		$this->db->query("UPDATE leden SET schermnaam='".$this->db->real_escape_string($naam)."' WHERE id=" . $this->data['id']);
+	}
+	
+	function updateMail($mail) {
+		$this->db->query("UPDATE leden SET mail='".$this->db->real_escape_string($mail)."' WHERE id=" . $this->data['id']);
+	}
 
 }
 
