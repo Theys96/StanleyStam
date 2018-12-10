@@ -10,7 +10,7 @@
     echo "<p class='card-text'>Op dit moment bestaat de stam uit " . $leden->num_rows . " leden:</p>\n";
     echo "<div class='row'>\n";
     while ($lid = $leden->fetch_assoc()) {
-      echo "<div class='col-3'>".htmlspecialchars($lid['naam'])."</div>";
+      echo "<div class='col-3'>".htmlentities($lid['naam'])."</div>";
     }
     echo "</div>\n";
     echo "</div>\n";
