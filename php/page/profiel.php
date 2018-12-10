@@ -2,7 +2,7 @@
 // Lid info
 $lid = $Model->userById($_SESSION['userID'])->data();
 if (isset($message)) {
-	echo "<<div class='alert alert-warning'>" . $message . "</div>\n";
+	echo "<div class='alert alert-warning'>" . $message . "</div>\n";
 }
 ?>
 <script>

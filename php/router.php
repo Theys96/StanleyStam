@@ -6,7 +6,7 @@ if (isset($_SESSION['user'])) {
 	$page = 'front';
 }
 
-if (in_array($request[0], array('a', 'agenda', 'actiepunten', 'front', 'opkomsten', 'kampen', 'acties', 'groepsraden', 'geschiedenis', 'barkaart', 'profiel', 'settings', 'login', 'logout') )) {
+if (in_array($request[0], array('a', 'agenda', 'actiepunten', 'front', 'opkomsten', 'kampen', 'acties', 'groepsraden', 'geschiedenis', 'barkaart', 'profiel', 'settings', 'login', 'logout', 'wachtwoord') )) {
 	$page = $request[0];
 }
 if ($page == 'agenda' || $page == 'geschiedenis') {
@@ -18,6 +18,9 @@ if ($page == 'agenda' || $page == 'geschiedenis') {
 	if ($request[1] == 'all') {
 		$limit = -1;
 	}
+}
+if ($page == 'wachtwoord' && isset($request[1])) {
+	$posthash = $request[1];
 }
 if ($page == 'a') {
 	$a = $request[1];
