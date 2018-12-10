@@ -35,7 +35,7 @@ function printListHighlightedId($list, $userID) {
     		echo ", ";
     	}
         if ($id == $userID) {
-            echo "<span class='text-success text-bold'>" . $name . "</span>";
+            echo "<span class='text-success text-bold'>" . htmlspecialchars($name) . "</span>";
             $found = 1;
         } else {
             echo $name;
