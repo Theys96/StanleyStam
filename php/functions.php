@@ -29,13 +29,18 @@ function printListHighlightedName($list, $user) {
 
 function printListHighlightedId($list, $userID) {
     $found = 0;
+    $first = true;
     foreach($list as $id => $name) {
+    	if (!$first) {
+    		echo ", ";
+    	}
         if ($id == $userID) {
-            echo "<span class='text-success text-bold'>" . $name . "</span> ";
+            echo "<span class='text-success text-bold'>" . $name . "</span>";
             $found = 1;
         } else {
-            echo $name . " ";
+            echo $name;
         }
+        $first = false;
     }
     return $found;
 }

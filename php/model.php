@@ -16,11 +16,22 @@ Class Activity {
 		if ($query->num_rows == 1) {
 			$this->data = $query->fetch_assoc();
 			
-			$this->data['organisators'] = explode(',', $this->data['organisators']);
+			# organisatie
+			$list = $this->data['organisators'];
+			$this->data['organisators'] = array();
+			if ($list != "") {
+				$query2 = $this->db->query("SELECT * FROM leden WHERE id IN (".$list.")");
+				while ($p = $query2->fetch_assoc()) {
+					$this->data['organisators'][$p['id']] = $p['schermnaam'];
+				}
+			}
+			
+			
+			# aanwezigen
 			$query2 = $this->db->query("SELECT * FROM activities_p LEFT JOIN leden ON activities_p.lid=leden.id WHERE act=" . $this->id . " ORDER BY leden.voornaam");
 			$this->data['precencies'] = array();
 			while ($p = $query2->fetch_assoc()) {
-				$this->data['precencies'][$p['id']] = $p['voornaam'];
+				$this->data['precencies'][$p['id']] = $p['schermnaam'];
 			}
 		}
 	}

@@ -40,7 +40,10 @@ function printActivity(Activity $activity) {
 			printRow("Datum", formatData($act['date_start'], $act['date_end']));
 
 			if (count($act['organisators']) > 0) {
-				printRow("Organisatie", implode('<br />', $act['organisators']));
+				echo '<div class="col-5 text-bold">Organisatie</div>' . "\n";
+				echo '<div class="col-7">';
+				$organisatie = printListHighlightedId($act['organisators'], intval($_SESSION['userID']) );
+				echo '</div>';
 			}
 
 			if ($act['p']) {
