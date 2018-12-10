@@ -1,6 +1,7 @@
 <?php
 ini_set("error_reporting", E_ERROR | E_WARNING | E_PARSE);
 ini_set('display_errors', 1);
+header('Content-Type: text/html; charset=ISO-8859-1');
 
 require_once('php/config.php');
 require_once('php/functions.php');

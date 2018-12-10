@@ -9,7 +9,7 @@
 					<?php
 					$leden = $con->query("SELECT leden.id, schermnaam FROM leden WHERE leden.tier > 0 ORDER BY voornaam ASC");
 					while ($lid = $leden->fetch_assoc()) {
-						echo "<option value='".$lid['id']."'>".htmlentities($lid['schermnaam'])."</option>";
+						echo "<option value='".$lid['id']."'>".$lid['schermnaam']."</option>";
 					}
 					?>
 				</select>
