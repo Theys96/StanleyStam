@@ -1,0 +1,104 @@
+body {
+background-color: black;
+background-image: url('logo.png');
+background-size: 150px;
+background-position: right top;
+background-repeat: no-repeat;
+color: white;
+font-size: 25px;
+font-family: sans-serif;
+}
+
+@font-face {
+font-family: CooperBlack;
+src: url('Cooper_Black.ttf');
+}
+
+div {
+border-radius: 15px;
+}
+
+#container {
+text-align: center;
+}
+#container * {
+margin-left: auto;
+margin-right: auto;
+}
+
+
+h1 {
+font-family: CooperBlack;
+font-size: 70px;
+color: orange;
+}
+
+h2 {
+font-family: CooperBlack;
+font-size: 50px;
+color: white;
+}
+
+h3 {
+font-family: CooperBlack;
+font-size: 35px;
+color: #000044;
+}
+
+.upcoming {
+background-color: #3399DD;
+width: 600px;
+color: black;
+padding: 25px;
+}
+
+.admin {
+background-color: #3399DD;
+width: 1000px;
+color: black;
+padding: 25px;
+}
+
+p.content {
+background-color: rgba(100,100,150,0.3);
+padding: 10px;
+}
+
+input,option,select {
+font-size: 20px;
+}
+
+a {
+font-weight: bold;
+color: #000000;
+}
+
+.groen {
+margin-left: auto;
+margin-right: auto;
+background-color: #339966;
+width: 600px;
+color: black;
+padding: 25px;
+}
+
+.oranje {
+background-color: orange;
+width: 600px;
+color: black;
+padding: 25px;
+}
+
+table {
+background-color: rgba(50,100,50,0.3);
+border: 1px solid black;
+width: 90%;
+padding: 3px;
+border-radius: 10px;
+}
+
+td {
+background-color: rgba(50,50,50,0.3);
+padding: 3px;
+border: 1px solid black;
+}

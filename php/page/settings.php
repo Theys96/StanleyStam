@@ -30,6 +30,11 @@
 						<span class="custom-control-indicator"></span>
 						<span class="custom-control-description">Hyves</span>
 					</label>
+					<label class="custom-control custom-radio" onClick="window.location='/rsa'">
+						<input name="style" value="rsa" type="radio" class="custom-control-input"<?php echo ($style == 'rsa' ? ' checked' : '') ?>>
+						<span class="custom-control-indicator"></span>
+						<span class="custom-control-description">RSA</span>
+					</label>
 				</div>
 			</form>
 
