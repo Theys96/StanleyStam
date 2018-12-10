@@ -55,7 +55,7 @@ $headers[] = 'From: Thijs <thijs@stanleystam.nl>';
 		$headers[] = sprintf("To: %s <%s>", $user['voornaam'], $user['mail']);
 		$to = $user['mail'];
 		$url = $baseUrl . "/wachtwoord/" . $hash;
-		$message = sprintf($message, $user['voornaam'], "https://".$url, $url);
+		$message = sprintf($message, $user['voornaam'], $url, $url);
 		mail($to, $subject, $message, implode("\r\n", $headers));
 		//echo $to . "<br />";
 		//echo $subject . "<br />";
